@@ -1,0 +1,11 @@
+{
+  "src": [
+    "pages/login",
+    "pages/register",
+    "components/movieShow",
+    "components/movieDetail",
+    "pages/pinglun",
+    "components/shoucanglan",
+    "pages/Bofang"
+  ]
+}
