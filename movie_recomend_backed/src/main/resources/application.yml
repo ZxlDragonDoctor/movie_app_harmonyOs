@@ -1,0 +1,24 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /zxl
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/movie
+    username: root
+    password: zxl123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  config:
+##    location: com.example.hongmeng1.conf
+#logging:
+#  level:
+#    com.example.hongmeng1.application: error
+
+#mybatis配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.zxl.move_recomend_backed.Model.pojo # 开启别名
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 控制台打印日志
+    mapUnderscoreToCamelCase: true #开启驼峰映射

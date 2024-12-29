@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxl.move_recomend_backed.mapper.MovieMapper">
+
+    <resultMap id="BaseResultMap" type="com.zxl.move_recomend_backed.Model.pojo.Movie">
+            <id property="movieid" column="movieid" jdbcType="INTEGER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="genre" column="genre" jdbcType="VARCHAR"/>
+            <result property="director" column="director" jdbcType="VARCHAR"/>
+            <result property="release_date" column="release_date" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="INTEGER"/>
+            <result property="poster" column="poster" jdbcType="VARCHAR"/>
+            <result property="profile" column="profile" jdbcType="VARCHAR"/>
+            <result property="link" column="link" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        movieid,title,genre,
+        director,release_date,deleted,
+        poster,profile,link
+    </sql>
+</mapper>
